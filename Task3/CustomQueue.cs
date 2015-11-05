@@ -131,7 +131,13 @@ namespace Task3
 
             object System.Collections.IEnumerator.Current
             {
-                get { throw new NotImplementedException(); }
+                get
+                {
+                    if (position > queue.Count)
+                        throw new InvalidOperationException();
+                    return queue._array[position];
+                }
+                //get { throw new NotImplementedException(); }
             }
         }
 
