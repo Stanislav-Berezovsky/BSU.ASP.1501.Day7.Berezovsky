@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Task1;
 using Task2;
+using Task3;
 
 namespace ConsoleForTasks
 {
@@ -29,7 +30,7 @@ namespace ConsoleForTasks
         
         static void Main(string[] args)
         {
-            var test = new CounterEvent();
+            /*var test = new CounterEvent();
             var timer = new EventNumber(1,test);
             var timer2 = new EventNumber(2,test);
             test.StartEvent(3);
@@ -38,6 +39,35 @@ namespace ConsoleForTasks
             foreach (var number in Fibonacci.GetNumbers(5))
             {
                 Console.WriteLine(number);
+            }
+
+            */
+
+            var qqq = new CustomQueue<int>();
+            qqq.Enqueue(112);
+            qqq.Enqueue(14);
+            qqq.Enqueue(1);
+            qqq.Enqueue(662);
+            qqq.Enqueue(909);
+            Console.WriteLine("QueueElements:");
+            foreach (var q in qqq)
+            {
+                Console.WriteLine(q);
+            }
+            Console.WriteLine("Dequeue");
+            Console.WriteLine(qqq.Dequeue());
+            Console.WriteLine(qqq.Dequeue());
+            Console.WriteLine("QueueElements:");
+            foreach (var q in qqq)
+            {
+                Console.WriteLine(q);
+            }
+            Console.WriteLine("Peek:");
+            Console.WriteLine(qqq.Peek());
+            Console.WriteLine("QueueElements:");
+            foreach (var q in qqq)
+            {
+                Console.WriteLine(q);
             }
             Console.ReadKey();
         }
