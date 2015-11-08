@@ -49,6 +49,9 @@ namespace ConsoleForTasks
             qqq.Enqueue(1);
             qqq.Enqueue(662);
             qqq.Enqueue(909);
+            qqq.Enqueue(112);
+            qqq.Enqueue(5555);
+
             Console.WriteLine("QueueElements:");
             foreach (var q in qqq)
             {
@@ -56,7 +59,7 @@ namespace ConsoleForTasks
             }
             Console.WriteLine("Dequeue");
             Console.WriteLine(qqq.Dequeue());
-            Console.WriteLine(qqq.Dequeue());
+             Console.WriteLine(qqq.Dequeue());
             Console.WriteLine("QueueElements:");
             foreach (var q in qqq)
             {
